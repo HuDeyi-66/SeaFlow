@@ -26,7 +26,9 @@ It does **not** apply to:
 
 ## The public Skills
 
-ShanHai (`HuDeyi-66/Shan_Hai_Code_Skill`) and LuoHai
+**ShanHai（海珊） — Legal Text Evidence Skill**
+(`HuDeyi-66/Shan_Hai_Code_Skill`) and
+**LuoHai（海珞） — Tabular Evidence Skill**
 (`HuDeyi-66/Luo_Hai_Tables_Skill`) are separate repositories. Each is licensed
 under the MIT License with the notice `Copyright (c) 2026 Peng Wang (Hu Deyi)`.
 

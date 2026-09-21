@@ -17,26 +17,29 @@ This repository is **documentation only**. It contains no runtime code.
 | Repository | What it is | Access |
 | --- | --- | --- |
 | **SeaFlow** (this repository) | Public informational entry point | Public |
-| [**ShanHai**](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill) | Legal-text evidence Skill | Public, open source |
-| [**LuoHai**](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill) | Tabular evidence Skill | Public, open source |
+| [**ShanHai（海珊）**](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill) | Legal Text Evidence Skill | Public, open source |
+| [**LuoHai（海珞）**](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill) | Tabular Evidence Skill | Public, open source |
 | SeaFlow base runtime | Core runtime and application integration | Private |
 
 ---
 
 ## The two public Skills
 
+**ShanHai（海珊） — Legal Text Evidence Skill**
+**LuoHai（海珞） — Tabular Evidence Skill**
+
 ShanHai and LuoHai are **independent open-source components**, and this is the
 most important thing on this page:
 
-> ShanHai and LuoHai are independently usable open-source components. SeaFlow
-> can integrate them as official Skills, but neither project requires the SeaFlow
-> runtime for standalone use.
+> ShanHai and LuoHai are independently usable open-source Skills. SeaFlow can
+> integrate them as official plugins, but standalone use does not require access
+> to the private SeaFlow base runtime.
 
 Each one can be cloned, installed, invoked, tested and integrated into other
 software entirely on its own terms. Neither imports the SeaFlow base, and
 neither needs it present in any form.
 
-**ShanHai — legal and textual evidence**
+**ShanHai（海珊） — Legal Text Evidence Skill**
 [github.com/HuDeyi-66/Shan_Hai_Code_Skill](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill)
 
 Reads UTF-8 legal text, detects legal structure, and emits evidence units with
@@ -46,7 +49,7 @@ document, a missing or malformed article marker, a numbering gap, a duplicated
 marker, an encoding failure — as distinct, inspectable outcomes. Where a
 location is ambiguous it returns every candidate and selects none.
 
-**LuoHai — structured and tabular evidence**
+**LuoHai（海珞） — Tabular Evidence Skill**
 [github.com/HuDeyi-66/Luo_Hai_Tables_Skill](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill)
 
 Reads OOXML workbooks with the standard library, detects table regions, and
@@ -58,6 +61,9 @@ Ambiguity and loss are reported, never resolved by first match.
 When SeaFlow **is** available, the two Skills operate as its official
 Skills/plugins. That integration is implemented inside SeaFlow, which adapts the
 Skills' public interfaces; the Skills themselves carry no SeaFlow dependency.
+
+*Each Skill repository is documented in both English and Simplified Chinese:
+`README.md` and `README.zh-CN.md`.*
 
 ---
 
