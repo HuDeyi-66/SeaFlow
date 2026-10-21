@@ -1,0 +1,11 @@
+/private_assets/
+/local_store/
+/interviews/
+/recordings/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*.key
+*.pem
+*.log

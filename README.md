@@ -1,122 +1,52 @@
 # SeaFlow
 
-**Public informational entry point for the SeaFlow project.**
+**Evidence First · Traceable Sources · Small Core · Extensible Skills**
 
-SeaFlow is a research-oriented evidence runtime designed to coordinate
-traceable legal, textual and tabular evidence workflows. Its aim is that every
-statement a consumer can act on is backed by evidence that can be re-checked
-against the artifact it came from — and that anything which cannot be
-established is reported as loss, ambiguity or refusal rather than guessed.
+SeaFlow is a research-oriented evidence workflow organized around a small,
+privately maintained application Core and six independently owned Skills.
+This repository is the public architecture and project entry point; it contains
+documentation, not the private runtime or confidential data.
 
-This repository is **documentation only**. It contains no runtime code.
+| Skill | Bounded responsibility | Availability |
+|---|---|---|
+| [ShanHai / 海珊](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill) | Legal-text structure, exact spans, native citations and reference candidates | Public |
+| [LuoHai / 海珞](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill) | Workbook/cell reconstruction and declared loss accounting | Public |
+| WenHai / 海玟 | Documentary registration, transcripts, segments and attributed advice | Local-only |
+| ChenHai / 海琛 | Evidence sufficiency and research-process assessment | Private accepted implementation |
+| [JueHai / 海珏](https://github.com/HuDeyi-66/Jue_Hai_Graph_Skill) | Bounded provenance graphs, assertion permissions and finite-sample formulas | Public |
+| [XianHai / 海现](https://github.com/HuDeyi-66/Xian_Hai_Time_Skill) | Temporal knowledge, state, admission and recheck planning | Public |
 
----
+The four public native Skills operate independently of private Core. The
+application owns cross-Skill adapters, source identity boundaries and workflow
+orchestration. Native schemas and algorithms stay with their Skill owners.
+The accepted private ChenHai sufficiency implementation and the historical
+public exploration prototype are distinct projects. WenHai has no public remote.
 
-## Repository map
+Source bytes, derived representations and research judgments remain separate.
+Missing, ambiguous, unsupported and unknown states are preserved; a reproducible
+calculation or reconstructed citation does not establish substantive legal truth.
 
-| Repository | What it is | Access |
-| --- | --- | --- |
-| **SeaFlow** (this repository) | Public informational entry point | Public |
-| [**ShanHai（海珊）**](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill) | Legal Text Evidence Skill | Public, open source |
-| [**LuoHai（海珞）**](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill) | Tabular Evidence Skill | Public, open source |
-| SeaFlow base runtime | Core runtime and application integration | Private |
+## Qualification and use
 
----
+The current integration qualification is bounded internal V3.5 synthetic
+engineering acceptance. The Pre-3.6 combined essential selection has 150 unique
+cases / 156 invocations; this differs from the historical 1,064-case inventory
+(1,048 passed and 16 optional skips). These are internal technical results, not
+independent external review, expert legal validation, production readiness or a
+V3.6 benchmark. External benchmarking remains pending.
 
-## The two public Skills
+Clone a public Skill and follow its README and `docs/PRE36_QUALIFICATION.md` for
+installation, small executable showcase and retained safety tests. Private or
+local-only components are not prerequisites for native public Skill use.
 
-**ShanHai（海珊） — Legal Text Evidence Skill**
-**LuoHai（海珞） — Tabular Evidence Skill**
+The [published project showcase](https://hudeyi-66.github.io/seaflow-library-project-control/)
+provides the six-Skill overview. Its publication is separate from source
+synchronization. The [canonical GitHub profile](https://github.com/HuDeyi-66)
+contains the current multilingual profile; this repository does not replace it.
 
-ShanHai and LuoHai are **independent open-source components**, and this is the
-most important thing on this page:
+## License
 
-> ShanHai and LuoHai are independently usable open-source Skills. SeaFlow can
-> integrate them as official plugins, but standalone use does not require access
-> to the private SeaFlow base runtime.
-
-Each one can be cloned, installed, invoked, tested and integrated into other
-software entirely on its own terms. Neither imports the SeaFlow base, and
-neither needs it present in any form.
-
-**ShanHai（海珊） — Legal Text Evidence Skill**
-[github.com/HuDeyi-66/Shan_Hai_Code_Skill](https://github.com/HuDeyi-66/Shan_Hai_Code_Skill)
-
-Reads UTF-8 legal text, detects legal structure, and emits evidence units with
-exact character, byte and line spans. It reconstructs citations that can be
-re-checked against the artifact, and reports structural problems — an empty
-document, a missing or malformed article marker, a numbering gap, a duplicated
-marker, an encoding failure — as distinct, inspectable outcomes. Where a
-location is ambiguous it returns every candidate and selects none.
-
-**LuoHai（海珞） — Tabular Evidence Skill**
-[github.com/HuDeyi-66/Luo_Hai_Tables_Skill](https://github.com/HuDeyi-66/Luo_Hai_Tables_Skill)
-
-Reads OOXML workbooks with the standard library, detects table regions, and
-records worksheet and table context. It emits cell and range evidence, keeps
-raw and rendered values distinct, and compares declared table metadata against
-what was actually observed instead of treating either as authoritative.
-Ambiguity and loss are reported, never resolved by first match.
-
-When SeaFlow **is** available, the two Skills operate as its official
-Skills/plugins. That integration is implemented inside SeaFlow, which adapts the
-Skills' public interfaces; the Skills themselves carry no SeaFlow dependency.
-
-*Each Skill repository is documented in both English and Simplified Chinese:
-`README.md` and `README.zh-CN.md`.*
-
----
-
-## The SeaFlow base runtime
-
-**The SeaFlow base runtime is currently maintained in a private repository and
-is not part of the public distribution.** This repository serves as the public
-informational entry point for the project.
-
-At a high level, the base is responsible for coordinating evidence workflows
-across independent components. Its responsibilities include:
-
-* **Evidence and runtime coordination** — sequencing a request end to end and
-  keeping the result inspectable at every step.
-* **Source and artifact handling** — registering sources and artifacts, and
-  verifying artifact integrity before anything is read from them.
-* **Skill orchestration** — running independent Skills and composing what they
-  return without flattening their distinct semantics into one another.
-* **Query and evidence routing** — deciding which Skill is eligible for a given
-  request, with machine-readable reasons for every eligibility decision.
-* **Citation and refusal handling** — binding every answer to re-verified native
-  citations, and refusing — in typed, inspectable ways — when the evidence
-  cannot support a conclusion.
-* **Integration of independent Skills** — adapting each Skill's own public
-  interface into the runtime's internal model, so the dependency runs from the
-  private side into the public components and never the other way round.
-
-This is a deliberately high-level description. The base's internal design and
-implementation are not published here.
-
-### What the private base is not
-
-It is not a hosted service, and it is not required in order to use either public
-Skill. Neither Skill calls into it, and neither will fail or degrade without it.
-
----
-
-## Licensing
-
-The **documentation in this repository** is licensed under the MIT License; see
-`LICENSE` and `NOTICE.md`.
-
-The two public Skills are licensed under the MIT License, with the notice
-`Copyright (c) 2026 Peng Wang (Hu Deyi)`.
-
-**The license here and in the Skills does not extend to the SeaFlow base
-runtime.** The base is separately maintained private software, and no license is
-granted to it by this repository or by the Skills. See `NOTICE.md`.
-
----
-
-## Status and scope
-
-This page is an informational overview, not a release announcement. SeaFlow is
-research software under active development. Nothing here is a commitment about
-future availability, and the presence of this page should not be read as one.
+This repository's documentation is MIT licensed; see `LICENSE` and `NOTICE.md`.
+Public Skill licensing follows each repository. No private Core or accepted
+private ChenHai license is granted here, and private/source-material rights are
+not changed by these documentation licenses.
