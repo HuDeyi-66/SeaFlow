@@ -81,6 +81,9 @@ confirmatory frozen P0 evidence, statistical significance or full six-Skill
 acceptance. P1G operational holds and source-purpose boundaries remain in force.
 These are local README edits; public synchronization requires owner approval.
 
+## Research Reports
+
+The [reports archive](reports/README.md) preserves the English RD03 2×2 working-paper original and a separately labeled aggregate V3.6 Public Edition. The detailed Chinese Run_001 source report remains internal; the public edition records its source hash and release limits.
 ## License
 
 This repository's documentation is MIT licensed; see `LICENSE` and `NOTICE.md`.

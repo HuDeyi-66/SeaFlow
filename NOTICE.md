@@ -35,6 +35,9 @@ under the MIT License with the notice `Copyright (c) 2026 Peng Wang (Hu Deyi)`.
 Their MIT license covers their own contents. It likewise does not extend to the
 SeaFlow base runtime.
 
+## Research report originals
+
+The source documents under `reports/` are archival research records and are not relicensed by this repository's MIT documentation license. Their report-specific READMEs record attribution and available rights information. This archive adds no separate license grant; copyright and reuse rights remain with their original authors or rights holders.
 ## Why this file exists
 
 So that the distinction is unambiguous:
