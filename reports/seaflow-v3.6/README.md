@@ -12,14 +12,14 @@
 - **Execution completeness:** 180 model requests; 178 completed and 2 ended at the output limit. Both truncated responses remain in the record.
 - **Resource cost:** E used more input resources and had longer cumulative latency than B-downstream. Exact resource totals are omitted from this Public Edition; actual monetary cost was not exposed.
 - **Interpretation:** Internal scoring is provisional and the report's overall interpretation is PARTIAL. It establishes neither statistical significance, equivalence, a zero effect nor an external benchmark pass. Negative findings, reviews, truncations and resource disadvantages are retained.
-- **Public date:** Pending final approval and GitHub publication.
+- **Public date:** 2026-10-26.
 - **Preparation date:** 2026-10-26.
 
 ## Source and integrity
 
 - **Original source path (private workspace):** `Exam_Field/Active/V3_6/FiveArm_Exploratory_Execution/Run_001/FIVE_ARM_RESEARCH_REPORT.md`
 - **Archived file:** [`FIVE_ARM_RESEARCH_REPORT_PUBLIC_EDITION.md`](FIVE_ARM_RESEARCH_REPORT_PUBLIC_EDITION.md)
-- **Public-edition SHA-256:** `9bc24a82ce5fc3d10b779f9f528147d7ccab90645dd32a23d7eb5d8e79a11e95`
+- **Public-edition SHA-256:** `3fa749a1c799ec37cff66ea9fed88562e0d5e5964201eace530e40f3381eda39`
 - **Original source SHA-256 (withheld):** `6bef44162e168338e31aa00689caa4309d2fd6f8a199fee5ce357acb1d3c0e7f`
 - **Edition status:** Aggregate English public summary; not an original copy or translation. The sealed Chinese source remains internal pending separate release review.
 

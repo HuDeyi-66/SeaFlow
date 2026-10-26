@@ -18,7 +18,7 @@ The V3.6 entry is a separately labeled aggregate Public Edition; the original Ch
 
 ## Release and rights status
 
-The 2×2 working paper is a byte-for-byte source copy; the V3.6 file is a separately labeled aggregate Public Edition, not the original Run_001 report. Public dates are set at publication. No raw datasets, frozen run directories, scorecards, execution logs, private Core, credentials or legal-source full text are included.
+The 2×2 working paper is a byte-for-byte source copy; the V3.6 file is a separately labeled aggregate Public Edition, not the original Run_001 report. Both were published on 2026-10-26. No raw datasets, frozen run directories, scorecards, execution logs, private Core, credentials or legal-source full text are included.
 
 The cover image was supplied by the repository owner for this archive and copied without editing. Its source-file name and SHA-256 are recorded here; no separate image license metadata was present in the file.
 
