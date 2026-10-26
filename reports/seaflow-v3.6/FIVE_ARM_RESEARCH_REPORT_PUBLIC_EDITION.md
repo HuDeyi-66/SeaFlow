@@ -11,7 +11,6 @@
 - **Execution/seal date:** 2026-10-23 per the project timeline.
 - **Original source path:** `Exam_Field/Active/V3_6/FiveArm_Exploratory_Execution/Run_001/FIVE_ARM_RESEARCH_REPORT.md (private workspace source)`
 - **Original source SHA-256:** `6bef44162e168338e31aa00689caa4309d2fd6f8a199fee5ce357acb1d3c0e7f`
-- **Public-edition SHA-256:** `85d9cf0220568ba17dc13587087dd8f3e60805650e97aff522aaba8b386aa62a` (filled after final bytes are written)
 - **Public date:** Pending final approval and GitHub publication.
 - **Preparation date:** 2026-10-26.
 
